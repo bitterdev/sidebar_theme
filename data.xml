@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <themes>
+        <theme handle="sidebar_theme" activated="1" package="sidebar_theme"/>
+    </themes>
+</concrete5-cif>

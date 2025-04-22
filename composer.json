@@ -1,0 +1,5 @@
+{
+  "name": "bitter/sidebar_theme",
+  "type": "concrete5-package",
+  "description": "Linktree-like Theme for ConcreteCMS."
+}

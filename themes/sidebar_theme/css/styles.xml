@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<styles version="2.0" lang="scss">
+    <set name="Base Colors">
+        <style name="Background" variable="background-color" type="color"/>
+        <style name="Button" variable="button-color" type="color"/>
+        <style name="Text" variable="text-regular-color" type="color"/>
+        <style name="Text (Hover)" variable="text-hover-color" type="color"/>
+    </set>
+</styles>

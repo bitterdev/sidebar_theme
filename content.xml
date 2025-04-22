@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <pagetemplates>
+        <pagetemplate icon="blank.png" name="Blank" handle="blank" package="sidebar_theme" internal=""/>
+    </pagetemplates>
+    <pagetypes>
+        <pagetype name="Empty Page" handle="page" package="" launch-in-composer="0" is-frequently-added="1">
+            <pagetemplates type="except" default="full">
+                <pagetemplate handle="blank"/>
+            </pagetemplates>
+            <target handle="all" package=""/>
+            <composer>
+                <formlayout>
+                    <set name="Basics" description="">
+                        <control custom-template="" required="1" custom-label="Page Name" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="description"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="url_slug"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="page_template"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="publish_target"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="full">
+                        <page name="" path="" filename="" pagetype="page" template="full" user="admin" description=""
+                              package="">
+                            <area name="Main">
+                                <blocks/>
+                            </area>
+                            <area name="Page Header">
+                                <blocks/>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks/>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+    </pagetypes>
+
+    <sociallinks>
+        <link service="facebook" url="#"/>
+        <link service="instagram" url="#"/>
+        <link service="twitter" url="#"/>
+        <link service="youtube" url="#"/>
+    </sociallinks>
+
+</concrete5-cif>
