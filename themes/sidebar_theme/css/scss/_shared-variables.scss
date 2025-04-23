@@ -3,10 +3,9 @@
 
 // Modify theme colors sass map
 $custom-colors: (
-        "background-color": $background-color,
-        "button-color": $button-color,
-        "text-regular-color": $text-regular-color,
-        "text-hover-color": $text-hover-color
+        "accent-color": $accent-color,
+        "headings-color": $headings-color,
+        "text-color": $text-color
 );
 
 // Grid Gutters

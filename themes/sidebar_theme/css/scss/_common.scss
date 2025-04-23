@@ -12,9 +12,9 @@
 @import "templates";
 
 :root {
-  --sidebar-theme-accent-color: #1B1B1B;
-  --sidebar-theme-text-color: #888;
-  --sidebar-theme-headline-color: #1B1B1B;
+  --sidebar-theme-accent-color: #{$accent-color};
+  --sidebar-theme-text-color: #{$text-color};
+  --sidebar-theme-headline-color: #{$headings-color};
 }
 
 html, body {
@@ -71,6 +71,10 @@ html, body {
     main {
       flex: 1;
       padding: 3rem;
+
+      @media screen and (max-width: 991px) {
+        padding: 1rem;
+      }
 
       img {
         margin-bottom: 3rem;

@@ -7,9 +7,24 @@ html {
         h1, h2, h3, h4, h5, h6,
         .h1, .h2, .h3, .h4, .h5, .h6 {
           color: var(--sidebar-theme-headline-color);
+          margin-bottom: 1rem;
         }
 
         color: var(--sidebar-theme-text-color);
+
+        .text-muted {
+          color: #bcbcbc !important;
+        }
+
+        .small {
+          font-size: .7rem;
+        }
+
+        ul, ol {
+          padding-left: 0;
+          margin-left: 0;
+          list-style-position: inside;
+        }
       }
     }
   }

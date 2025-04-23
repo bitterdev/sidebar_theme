@@ -4,6 +4,46 @@ html {
       form {
         margin-bottom: 1rem;
       }
+
+      .alert {
+        border-radius: 0;
+      }
+
+      .form-check-input {
+        background-color: var(--sidebar-theme-accent-color);
+        border-radius: 0;
+        box-shadow: none;
+        outline: none;
+      }
+
+      .form-control, input, select, textarea {
+        border: none;
+        border-bottom: 1px solid #ececec;
+        outline: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0.5rem 0;
+
+        &:focus, &:active {
+          border-bottom-color: var(--sidebar-theme-accent-color);
+        }
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      .control-label {
+        font-size: 1rem;
+      }
+
+      .btn {
+        background-color: var(--sidebar-theme-accent-color) !important;
+        color: #ffffff !important;
+        border-radius: 0;
+        border: none;
+        padding: 0.5rem 3rem;
+      }
     }
   }
 }
