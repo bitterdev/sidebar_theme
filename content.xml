@@ -2,6 +2,7 @@
 <concrete5-cif version="1.0">
     <pagetemplates>
         <pagetemplate icon="blank.png" name="Blank" handle="blank" package="sidebar_theme" internal=""/>
+        <pagetemplate icon="blank.png" name="Contact" handle="contact" package="sidebar_theme" internal=""/>
     </pagetemplates>
     <pagetypes>
         <pagetype name="Empty Page" handle="page" package="" launch-in-composer="0" is-frequently-added="1">
@@ -51,4 +52,254 @@
         <link service="youtube" url="#"/>
     </sociallinks>
 
+    <pages>
+        <page name="Home" path="" public-date="2025-04-22 15:07:26" filename="" pagetype="" template="full"
+              user="admin" description="" package="" root="true">
+            <area name="Page Header">
+                <blocks/>
+            </area>
+            <area name="Main">
+                <blocks>
+                    <block type="image" name="">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:placeholder.jpg}</fID>
+                                <fOnstateID/>
+                                <cropImage>0</cropImage>
+                                <maxWidth>0</maxWidth>
+                                <maxHeight>0</maxHeight>
+                                <externalLink/>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow>0</openLinkInNewWindow>
+                                <altText/>
+                                <title/>
+                                <sizingOption>thumbnails_default</sizingOption>
+                                <imageLink__which>none</imageLink__which>
+                                <imageLink_none/>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<h1>Lorem ipsum dolor sit amet</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+
+<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Page Footer">
+                <blocks/>
+            </area>
+        </page>
+        <page name="Contact" path="/contact" public-date="2025-04-23 10:25:58" filename="" pagetype="page"
+              template="contact" user="admin" description="" package="">
+            <area name="Main">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<h3>Contact</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.&nbsp;</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="form" name="" custom-template="sidebar_theme_form">
+                        <data table="btForm">
+                            <record>
+                                <questionSetId>1745404029</questionSetId>
+                                <surveyName>Contact</surveyName>
+                                <submitText>Submit</submitText>
+                                <thankyouMsg>Thanks!</thankyouMsg>
+                                <notifyMeOnSubmission>0</notifyMeOnSubmission>
+                                <recipientEmail/>
+                                <displayCaptcha>0</displayCaptcha>
+                                <redirectCID/>
+                                <addFilesToSet>0</addFilesToSet>
+                            </record>
+                        </data>
+                        <data table="btFormQuestions">
+                            <record>
+                                <qID>6</qID>
+                                <msqID>1</msqID>
+                                <questionSetId>1745404029</questionSetId>
+                                <question>Name</question>
+                                <inputType>field</inputType>
+                                <options/>
+                                <position>1000</position>
+                                <width>50</width>
+                                <height>3</height>
+                                <defaultDate/>
+                                <required>1</required>
+                            </record>
+                            <record>
+                                <qID>7</qID>
+                                <msqID>2</msqID>
+                                <questionSetId>1745404029</questionSetId>
+                                <question>E-Mail</question>
+                                <inputType>email</inputType>
+                                <options>a:1:{s:22:"send_notification_from";i:0;}</options>
+                                <position>1000</position>
+                                <width>50</width>
+                                <height>3</height>
+                                <defaultDate/>
+                                <required>1</required>
+                            </record>
+                            <record>
+                                <qID>8</qID>
+                                <msqID>3</msqID>
+                                <questionSetId>1745404029</questionSetId>
+                                <question>Phone Number</question>
+                                <inputType>telephone</inputType>
+                                <options/>
+                                <position>1000</position>
+                                <width>50</width>
+                                <height>3</height>
+                                <defaultDate/>
+                                <required>1</required>
+                            </record>
+                            <record>
+                                <qID>9</qID>
+                                <msqID>4</msqID>
+                                <questionSetId>1745404029</questionSetId>
+                                <question>Message</question>
+                                <inputType>text</inputType>
+                                <options/>
+                                <position>1000</position>
+                                <width>50</width>
+                                <height>3</height>
+                                <defaultDate/>
+                                <required>1</required>
+                            </record>
+                            <record>
+                                <qID>10</qID>
+                                <msqID>5</msqID>
+                                <questionSetId>1745404029</questionSetId>
+                                <question>Options</question>
+                                <inputType>field</inputType>
+                                <options/>
+                                <position>1000</position>
+                                <width>50</width>
+                                <height>3</height>
+                                <defaultDate/>
+                                <required>1</required>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<p class="text-muted small">By clicking &quot;Submit&quot;, I agree that the information provided in the form will be collected and processed for the purpose of handling my request. The data will be deleted after the request has been processed.</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Map">
+                <blocks>
+                    <block type="image" name="" custom-container-settings="0">
+                        <data table="btContentImage">
+                            <record>
+                                <fID>{ccm:export:file:placeholder.jpg}</fID>
+                                <fOnstateID/>
+                                <cropImage>0</cropImage>
+                                <maxWidth>0</maxWidth>
+                                <maxHeight>0</maxHeight>
+                                <externalLink/>
+                                <internalLinkCID/>
+                                <fileLinkID/>
+                                <openLinkInNewWindow>0</openLinkInNewWindow>
+                                <altText/>
+                                <title/>
+                                <sizingOption>thumbnails_default</sizingOption>
+                                <imageLink__which>none</imageLink__which>
+                                <imageLink_none/>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Contact Details">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<h3>Lorem ipsum</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.&nbsp;</p>
+
+<ul>
+	<li><i></i>My Street, Zip Code, City</li>
+	<li><i></i>+123456789</li>
+	<li><i></i>my@email.address</li>
+</ul>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </page>
+    </pages>
+    <stacks>
+        <stack name="Footer Navigation" type="global_area" path="/footer-navigation">
+            <area name="Main">
+                <blocks>
+                    <block type="content" name="">
+                        <data table="btContentLocal">
+                            <record>
+                                <content><![CDATA[<p>&copy; 2024 freshcast. Alle Rechte vorbehalten.</p>
+]]></content>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="autonav" name="">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy>display_asc</orderBy>
+                                <displayPages>top</displayPages>
+                                <displayPagesCID/>
+                                <displayPagesIncludeSelf>0</displayPagesIncludeSelf>
+                                <displaySubPages>none</displaySubPages>
+                                <displaySubPageLevels>enough</displaySubPageLevels>
+                                <displaySubPageLevelsNum>0</displaySubPageLevelsNum>
+                                <displayUnavailablePages>0</displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+        <stack name="Header Navigation" type="global_area" path="/header-navigation">
+            <area name="Main">
+                <blocks>
+                    <block type="autonav" name="">
+                        <data table="btNavigation">
+                            <record>
+                                <orderBy>display_asc</orderBy>
+                                <displayPages>top</displayPages>
+                                <displayPagesCID/>
+                                <displayPagesIncludeSelf>0</displayPagesIncludeSelf>
+                                <displaySubPages>none</displaySubPages>
+                                <displaySubPageLevels>enough</displaySubPageLevels>
+                                <displaySubPageLevelsNum>0</displaySubPageLevelsNum>
+                                <displayUnavailablePages>0</displayUnavailablePages>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+        </stack>
+    </stacks>
 </concrete5-cif>

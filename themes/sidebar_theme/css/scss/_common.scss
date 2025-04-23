@@ -4,3 +4,77 @@
 // which bootstrap will automatically create
 @import '@concretecms/bedrock/assets/bedrock/scss/frontend';
 
+@import "form";
+@import "footer";
+@import "sidebar";
+@import "blocks";
+@import "typography";
+@import "templates";
+
+:root {
+  --sidebar-theme-accent-color: #1B1B1B;
+  --sidebar-theme-text-color: #888;
+  --sidebar-theme-headline-color: #1B1B1B;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.ccm-page {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  display: flex;
+
+
+  @media screen and (max-width: 991px) {
+
+    &.navbar-visible {
+      .content-section, .navbar-toggle {
+        transform: translateX(300px);
+        transition: all 0.3s ease-in;
+      }
+
+      nav#sidebar {
+        transform: translateX(0px);
+        transition: all 0.3s ease-in;
+      }
+    }
+
+    .content-section, .navbar-toggle {
+      transition: all 0.3s ease-in;
+    }
+
+    nav#sidebar {
+      transform: translateX(-300px);
+      transition: all 0.3s ease-in;
+    }
+
+    .content-section {
+      margin-left: 0 !important;
+    }
+
+    .navbar-toggle {
+      display: block !important;
+    }
+  }
+
+  .content-section {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 300px;
+    z-index: 0;
+
+    main {
+      flex: 1;
+      padding: 3rem;
+
+      img {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

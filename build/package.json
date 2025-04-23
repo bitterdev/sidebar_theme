@@ -21,6 +21,9 @@
     "production": "mix --production"
   },
   "dependencies": {
-    "path": "^0.12.7"
+    "@fontsource/poppins": "^5.2.5",
+    "pace-js": "^1.2.4",
+    "path": "^0.12.7",
+    "themify-icons-scss": "^1.0.0"
   }
 }

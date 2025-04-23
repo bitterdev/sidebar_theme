@@ -1,0 +1,31 @@
+html {
+  body {
+    .ccm-page {
+      &.page-template-contact {
+        #map {
+          margin-left: -3rem;
+          margin-right: -3rem;
+          margin-top: -3rem;
+          height: 500px;
+
+          .googleMapCanvas {
+            height: 500px !important;
+          }
+
+          & > img {
+            width: 100%;
+            height: 500px !important;
+            object-fit: cover;
+          }
+        }
+
+        .text-content {
+          padding: 3rem;
+          margin-top: -6rem;
+          position: relative;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}

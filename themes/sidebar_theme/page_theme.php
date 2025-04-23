@@ -22,6 +22,7 @@ class PageTheme extends Theme
     {
         $this->requireAsset('javascript', 'jquery');
         $this->requireAsset('javascript', 'bootstrap');
+        $this->requireAsset('css', 'font-awesome');
         $this->requireAsset('vue');
     }
 

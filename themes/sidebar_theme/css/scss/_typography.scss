@@ -1,0 +1,16 @@
+html {
+  body {
+    .ccm-page {
+      font-family: "Poppins", Arial, sans-serif;
+
+      main {
+        h1, h2, h3, h4, h5, h6,
+        .h1, .h2, .h3, .h4, .h5, .h6 {
+          color: var(--sidebar-theme-headline-color);
+        }
+
+        color: var(--sidebar-theme-text-color);
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@ mix.setResourceRoot('./');
 mix.setPublicPath('../themes/sidebar_theme');
 
 mix
+    .copyDirectory("node_modules/@fontsource/poppins", "../themes/sidebar_theme/css/fonts/poppins")
     .sass('../themes/sidebar_theme/css/presets/default/main.scss', '../themes/sidebar_theme/css/skins/default.css', {
         sassOptions: {
             includePaths: [

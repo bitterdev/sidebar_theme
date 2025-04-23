@@ -3,4 +3,16 @@
     <themes>
         <theme handle="sidebar_theme" activated="1" package="sidebar_theme"/>
     </themes>
+
+    <singlepages>
+        <page name="Sidebar Theme" path="/dashboard/sidebar_theme"
+              filename="/dashboard/sidebar_theme.php"
+              pagetype="" description=""
+              package="sidebar_theme">
+        </page>
+        <page name="Settings" path="/dashboard/sidebar_theme/settings"
+              filename="/dashboard/sidebar_theme/settings.php" pagetype="" description=""
+              package="sidebar_theme">
+        </page>
+    </singlepages>
 </concrete5-cif>

@@ -8,7 +8,6 @@ use Concrete\Core\View\View;
 
 /** @var Page $c */
 /** @var View $this */
-
 ?>
 
 <?php /** @noinspection PhpUnhandledExceptionInspection */
