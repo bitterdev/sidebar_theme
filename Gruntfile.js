@@ -3,6 +3,11 @@ var packageName = "sidebar_theme";
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        exec: {
+          composer_install: {
+            cmd: 'composer install'
+          }
+        },
         version: {
             php: {
                 options: {
@@ -60,14 +65,13 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            dist: ['dist'],
-            composer: ['vendor', 'composer.lock']
+            dist: ['dist']
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-composer');
+    grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-version');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
