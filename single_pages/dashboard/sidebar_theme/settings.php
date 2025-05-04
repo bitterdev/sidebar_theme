@@ -30,6 +30,8 @@ $pageSelector = $app->make(PageSelector::class);
     <?php \Concrete\Core\View\View::element("dashboard/help", [], "sidebar_theme"); ?>
 </div>
 
+<?php \Concrete\Core\View\View::element("dashboard/did_you_know", [], "sidebar_theme"); ?>
+
 <form action="#" method="post">
     <?php echo $token->output("update_settings"); ?>
 
