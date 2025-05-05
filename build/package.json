@@ -2,17 +2,16 @@
   "name": "sidebar_theme",
   "version": "3.0.0",
   "description": "Package that contains the official Sidebar Theme for Concrete CMS Version 9 and above.",
-  "author": "PortlandLabs",
+  "author": "Fabian Bitter",
   "license": "MIT",
   "devDependencies": {
-    "@concretecms/bedrock": "^1.5.7",
-    "laravel-mix": "^6.0.49",
+    "@concretecms/bedrock": "^1.5.5",
+    "laravel-mix": "^6.0.41",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.87.0",
-    "sass-loader": "^16.0.5",
-    "vue": "^3.5.13",
-    "vue-loader": "^17.4.2",
-    "vue-template-compiler": "^0.1.0"
+    "sass": "^1.59.3",
+    "sass-loader": "^12.6.0",
+    "vue-loader": "^15.10.1",
+    "vue-template-compiler": "^2.7.14"
   },
   "scripts": {
     "development": "mix",
@@ -22,7 +21,7 @@
     "production": "mix --production"
   },
   "dependencies": {
-    "@fontsource/poppins": "^5.2.6",
+    "@fontsource/poppins": "^5.2.5",
     "pace-js": "^1.2.4",
     "path": "^0.12.7",
     "themify-icons-scss": "^1.0.0"

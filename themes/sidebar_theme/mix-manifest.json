@@ -1,4 +1,6 @@
 {
+    "/js/main.js": "/js/main.js",
+    "/css/skins/default.css": "/css/skins/default.css",
     "/css/fonts/poppins/100-italic.css": "/css/fonts/poppins/100-italic.css",
     "/css/fonts/poppins/100.css": "/css/fonts/poppins/100.css",
     "/css/fonts/poppins/200-italic.css": "/css/fonts/poppins/200-italic.css",
